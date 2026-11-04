@@ -3,32 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2F4A34">
 <title>Masjid Badar – Personvern</title>
-<style>
-body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:40rem;margin:0 auto;padding:2rem 1rem;color:#1d2b24;background:#fbf8f0}
-h1,h2{color:#0b5d44}a{color:#0b5d44}
-</style>
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Personvernerklæring for Masjid Badar</h1>
-<p>Sist oppdatert: 4. november 2026.</p>
-<p>Masjid Badar er appen for moskeen og menigheten i Asker. Denne erklæringen forklarer hvilke opplysninger appen behandler.</p>
-<h2>Behandlingsansvarlig</h2>
-<p>Masjid Badar Asker, kontakt: <a class="m" href="#"><noscript>support [at] masjidbadar.no</noscript></a>.</p>
-<h2>Vanlige brukere</h2>
-<p>Du trenger ingen konto. Appen ber ikke om navn, e-post eller telefonnummer, og den bruker ingen sporing eller reklame. Bønnetider, kunngjøringer og aktiviteter hentes fra moskeens server. Påminnelser du velger, planlegges lokalt på enheten din.</p>
-<h2>Qibla-kompass (valgfritt)</h2>
-<p>Qibla-kompasset kan be om posisjonen din for å vise retningen. Posisjonen brukes bare på telefonen og blir aldri lagret eller sendt. Uten posisjon vises retningen fra moskeen.</p>
-<h2>Varsler (valgfritt)</h2>
-<p>Hvis du slår på varsler om kunngjøringer eller aktiviteter, lagrer vi en tilfeldig installasjons-ID, en hemmelig nøkkel (lagret kun som kryptert verdi), enhetens push-token fra Apple og hvilke varseltyper du har valgt. Dette brukes bare til å sende varslene du har bedt om. Vi bruker dem ikke til å identifisere deg. Slår du av varsler, fjernes registreringen. Registreringer uten fungerende push-token slettes etter 30 dager.</p>
-<h2>Administratorer</h2>
-<p>Administratorer som publiserer innhold logger inn med e-postadresse og passord. E-postadressen lagres for innlogging og for å vite hvem som har publisert og endret innhold. Bare utpekte administratorer får tilgang.</p>
-<h2>Lagring og databehandlere</h2>
-<p>Data lagres hos Supabase i EU. E-post til administratorer (for eksempel invitasjoner) sendes via Resend. Varsler leveres via Apples tjeneste for push-varsler. Vi selger ikke opplysninger og deler dem ikke med andre til reklameformål.</p>
-<h2>Dine rettigheter</h2>
-<p>Du kan be om innsyn, retting eller sletting av opplysninger om deg ved å kontakte oss på e-postadressen over. Du kan også klage til Datatilsynet.</p>
-<h2>Endringer</h2>
-<p>Vi kan oppdatere erklæringen. Siste versjon ligger alltid på denne siden.</p>
+<header class="hero">
+  <img src="logo.png" alt="Masjid Badar-logo">
+  <p class="eyebrow">Masjid Badar</p>
+  <h1>Personvernerklæring</h1>
+  <p>Masjid Badar er appen for moskeen og menigheten i Asker. Denne erklæringen forklarer hvilke opplysninger appen behandler.</p>
+  <div class="pills"><span class="pill">Ingen konto</span><span class="pill">Ingen sporing</span><span class="pill">Ingen reklame</span></div>
+  <p class="updated">Sist oppdatert: 4. november 2026.</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5"/></svg></span>Behandlingsansvarlig</h2>
+    <p>Masjid Badar Asker, kontakt: <a class="m" href="#"><noscript>support [at] masjidbadar.no</noscript></a>.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Vanlige brukere</h2>
+    <p>Du trenger ingen konto. Appen ber ikke om navn, e-post eller telefonnummer, og den bruker ingen sporing eller reklame. Bønnetider, kunngjøringer og aktiviteter hentes fra moskeens server. Påminnelser du velger, planlegges lokalt på enheten din.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></span>Qibla-kompass (valgfritt)</h2>
+    <p>Qibla-kompasset kan be om posisjonen din for å vise retningen. Posisjonen brukes bare på telefonen og blir aldri lagret eller sendt. Uten posisjon vises retningen fra moskeen.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/></svg></span>Varsler (valgfritt)</h2>
+    <p>Hvis du slår på varsler om kunngjøringer eller aktiviteter, lagrer vi en tilfeldig installasjons-ID, en hemmelig nøkkel (lagret kun som kryptert verdi), enhetens push-token fra Apple og hvilke varseltyper du har valgt. Dette brukes bare til å sende varslene du har bedt om. Vi bruker dem ikke til å identifisere deg. Slår du av varsler, fjernes registreringen. Registreringer uten fungerende push-token slettes etter 30 dager.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>Administratorer</h2>
+    <p>Administratorer som publiserer innhold logger inn med e-postadresse og passord. E-postadressen lagres for innlogging og for å vite hvem som har publisert og endret innhold. Bare utpekte administratorer får tilgang.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></span>Lagring og databehandlere</h2>
+    <p>Data lagres hos Supabase i EU. E-post til administratorer (for eksempel invitasjoner) sendes via Resend. Varsler leveres via Apples tjeneste for push-varsler. Vi selger ikke opplysninger og deler dem ikke med andre til reklameformål.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8.5 7 10 4-1.5 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Dine rettigheter</h2>
+    <p>Du kan be om innsyn, retting eller sletting av opplysninger om deg ved å kontakte oss på e-postadressen over. Du kan også klage til Datatilsynet.</p>
+  </section>
+  <section class="card">
+    <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"/></svg></span>Endringer</h2>
+    <p>Vi kan oppdatere erklæringen. Siste versjon ligger alltid på denne siden.</p>
+  </section>
+</main>
+
+<footer><a href="./">Support</a> · © 2026 Masjid Badar, Asker</footer>
+
 <script>
 document.querySelectorAll("a.m").forEach(function(a){var e=["support","masjidbadar.no"].join("@");a.href="mailto:"+e;a.textContent=e;});
 </script>
